@@ -8,6 +8,7 @@ thumbs.db
 .env
 .env.local
 .env.*.local
+**/.env
 
 # Python / Backend
 __pycache__/
@@ -31,6 +32,11 @@ yarn-error.log*
 
 # Docker
 .docker/
+Dockerfile
+docker-compose.yml
+
+# Specific Backend
+backend/.env
 
 # IDEs
 .vscode/
