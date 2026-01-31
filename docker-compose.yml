@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: simplisearch_backend
+    ports:
+      - "6767:6767"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=6767
+      - DB_PATH=/data/metadata.db
+    volumes:
+      - backend_data:/data
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: simplisearch_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_data:

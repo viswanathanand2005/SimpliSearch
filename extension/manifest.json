@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "SimpliSearch Saver",
+  "version": "2.0",
+  "description": "Manually save snippets to your SimpliSearch library.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:6767/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

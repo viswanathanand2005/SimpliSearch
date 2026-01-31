@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Default (Light Mode) */
+    .icon-main { stroke: #0f172a; }
+    .icon-accent { stroke: #3b82f6; }
+    
+    /* Dark Mode adjustment */
+    @media (prefers-color-scheme: dark) {
+      .icon-main { stroke: #f8fafc; }
+      .icon-accent { stroke: #60a5fa; }
+    }
+  </style>
+  
+  <circle cx="13" cy="13" r="8" class="icon-accent" stroke-width="2.5"/>
+  
+  <path d="M19 19L27 27" class="icon-accent" stroke-width="3" stroke-linecap="round"/>
+  
+  <path d="M13 10V16M10 13H16" class="icon-main" stroke-width="2" stroke-linecap="round"/>
+</svg>

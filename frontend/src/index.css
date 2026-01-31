@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Light Mode */
+  --bg-color: #f8fafc;
+  --text-main: #0f172a;
+  --text-sub: #64748b;
+  --card-bg: rgba(255, 255, 255, 0.8); /* Translucent for Glassmorphism */
+  --border-color: #e2e8f0;
+  --accent-color: #3b82f6;
+  --grid-color: rgba(15, 23, 42, 0.05);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode */
+  --bg-color: #0f172a;
+  --text-main: #f8fafc;
+  --text-sub: #94a3b8;
+  --card-bg: rgba(30, 41, 59, 0.7); /* Translucent for Glassmorphism */
+  --border-color: #334155;
+  --accent-color: #60a5fa;
+  --grid-color: rgba(255, 255, 255, 0.03);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  /* Technical Grid Pattern */
+  background-image: radial-gradient(var(--grid-color) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-attachment: fixed;
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+#root { width: 100%; margin: 0; padding: 0; }
+* { box-sizing: border-box; }
