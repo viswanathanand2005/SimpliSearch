@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         text: capturedData.text,
       };
 
-      const res = await fetch("http://localhost:6767/save_page", {
+      const res = await fetch("https://simplisearch-backend.onrender.com/save_page", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     } catch (err) {
       console.error(err);
-      status.innerText = "Backend Offline (Is Port 6767 running?)";
+      status.innerText = "Connection Failed. Is the backend running?";
       status.className = "error";
       saveBtn.innerText = "Retry";
       saveBtn.disabled = false;
