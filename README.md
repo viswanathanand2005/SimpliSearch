@@ -2,7 +2,7 @@
 
 SimpliSearch is an AI-powered knowledge retrieval engine that allows you to store web snippets and perform semantic searches over them. Unlike keyword matching, SimpliSearch understands the *meaning* of your query to find relevant results.
 
-![SimpliSearch UI](frontend/public/screenshot.png) <!-- Conceptual link, assuming one might exist or user will add one -->
+
 
 ## 🚀 Features
 
@@ -33,9 +33,7 @@ The easiest way to run SimpliSearch is with **Docker Compose**.
 
 > **Note**: The first startup may take a minute as the backend downloads the AI models.
 
-## � Local Setup (No Docker)
-
-Run SimpliSearch directly on your machine.
+## 🔧 Manual Setup
 
 ### Prerequisites
 *   **Python**: 3.9 or higher.
